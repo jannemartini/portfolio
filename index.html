@@ -19,6 +19,7 @@
                         <li><a href="#contact">Contact</a></li>
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
+                    <img src="images/moon.png" id="icon">
                     <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
@@ -192,12 +193,10 @@
                 <h3>Internship</h3>
                 <p>National Cybersecurity R&D Lab<br>(Sep 2021 - Jan 2022)</p>
                 <div class="layer">
-                    <ul class="a">
                         <p>Capture the Flag Provisioning Platform Project</p>
-                        <li>Designed schema and implemented database using MySQL.</li>
-                        <li>Determined user needs and ensured necessary data was retrieved, stored and secured.</li>
-                        <li>Coordinated with Front-End and Back-End teams</li>
-                    </ul>
+                        <p>• Designed schema and implemented database using MySQL.</p>
+                        <p>• Determined user needs and ensured necessary data was retrieved, stored and secured.</p>
+                        <p>• Coordinated with Front-End and Back-End teams</p>
                 </div>
             </div>
             <div class="exp">
@@ -205,11 +204,9 @@
                 <h3>Real-Time Malware Threat<br> Feed Analysis System</h3>
                 <p>Republic Polytechnic, C300 Final Year Project</p>
                 <div class="layer">
-                    <ul class="a">
-                        <li>Pulled data from intelligence sites to feed into an SIEM (Splunk) through a python script</li>
-                        <li>Filtering the pulled data and identifying IOCs to send an alert.</li>
-                        <li>Inputting data into interactive dashboards like User Analytics Behaviour dashboard for classification, reporting and correlation.</li>
-                    </ul>
+                    <p>• Pulled data from intelligence sites to feed into an SIEM (Splunk) through a python script</p>
+                    <p>• Filtering the pulled data and identifying IOCs to send an alert.</p>
+                    <p>• Inputting data into interactive dashboards like User Analytics Behaviour dashboard for classification, reporting and correlation.</p>
                 </div>
             </div>
             <div class="exp">
@@ -217,11 +214,9 @@
                 <h3>Penetration Test Laboratory<br> & Capture the Flag</h3>
                 <p>Republic Polytechnic, C200 Special Projects</p>
                 <div class="layer">
-                    <ul class="a">
-                        <li>Designing and implementing a network infrastructure consisting of both Linux and Windows Operating Systems and exploiting its vulnerabilities such as Cross-Site Request Forgery, DLL Hijacking, Unquoted Service Path, and Misconfigured Cronjob.</li>
-                        <li>Documentation on vulnerabilities and providing solutions on securing them.</li>
-                        <li>Creating flags on Diffie Hellman and Audio Steganography for Capture the Flag.</li>
-                    </ul>
+                    <p>• Designing and implementing a network infrastructure consisting of both Linux and Windows Operating Systems and exploiting its vulnerabilities such as Cross-Site Request Forgery, DLL Hijacking, Unquoted Service Path, and Misconfigured Cronjob.</p>
+                    <p>• Documentation on vulnerabilities and providing solutions on securing them.</p>
+                    <p>• Creating flags on Diffie Hellman and Audio Steganography for Capture the Flag.</p>
                 </div>
             </div>
         </div>
@@ -297,6 +292,22 @@
             }
             function closemenu(){
                 sidemenu.style.right = '-200px';
+            }
+
+          </script>
+
+          <script>
+
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "images/sun.png";
+                } else {
+                    icon.src ="images/moon.png";
+                }
             }
 
           </script>
