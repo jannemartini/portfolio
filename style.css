@@ -179,7 +179,6 @@ nav ul li a:hover::after{
     padding-top: 5px;
     display: flex;
     justify-content: center;
-    margin-right: 150px;
     align-items: center;
     column-gap: .5rem;
     font-size: 18px;
@@ -189,7 +188,6 @@ nav ul li a:hover::after{
 
 .grid{
     display: grid;
-    gap: 10rem;
 }
 
 .skills-info,
@@ -462,6 +460,13 @@ nav .fas{
         top: 30px;
         left: 30px;
         cursor: pointer;
+    }
+    .skills-container{
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .grid{
+        display: contents;
     }
 
 }
