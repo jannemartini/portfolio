@@ -433,6 +433,11 @@ nav .fas{
         margin-top: 600px;
         padding-right: 150px;
         text-align: center;
+        background: none;
+    }
+
+    .header-text h1 span{
+        background: none;
     }
 
     .logo{
