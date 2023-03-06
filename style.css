@@ -421,7 +421,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 600px){
     #navbar{
         background-image: url(images/bg-phone.png);
         background-size: cover;
